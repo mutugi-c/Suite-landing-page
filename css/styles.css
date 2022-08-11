@@ -1,6 +1,8 @@
 :root {
   --color-primary: #172339;
   --color-body: #495660;
+  --color-creamWhite: #faf8f6;
+  --color-cream: #f3ede7;
 }
 
 /* Typography */
@@ -41,4 +43,34 @@ h3 {
 h4 {
   font-size: 1rem;
   line-height: 1.625rem;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  border-style: none;
+  color: var(--color-creamWhite);
+  outline: none;
+  transition: color 0.3s;
+}
+
+.btn--primary:hover {
+  background: linear-gradient(to bottom right, #cb30e3, #ffa84e);
+}
+
+.btn--secondary {
+  background: transparent;
+  transition: color 0.3s;
+}
+
+.btn--secondary:hover {
+  background: var(--color-primary);
+  color: var(--color-creamWhite);
 }
