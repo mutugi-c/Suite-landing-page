@@ -1,0 +1,44 @@
+:root {
+  --color-primary: #172339;
+  --color-body: #495660;
+}
+
+/* Typography */
+
+body {
+  color: var(--color-body);
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.125rem;
+  letter-spacing: 0;
+  line-height: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-primary);
+}
+
+h1 {
+  font-size: 4.5rem;
+  letter-spacing: 1px;
+  line-height: 4.875rem;
+}
+
+h2 {
+  font-size: 3rem;
+  letter-spacing: 0.5px;
+  line-height: 3.5rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+  letter-spacing: 0.2px;
+  line-height: 2rem;
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
