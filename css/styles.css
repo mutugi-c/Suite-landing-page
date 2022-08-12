@@ -315,3 +315,38 @@ h4 {
     width: 100px;
   }
 }
+
+/* Footer */
+footer {
+  background: var(--color-cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 420px;
+}
+
+.footer__copyright {
+  letter-spacing: 0.08px;
+  font-weight: 300;
+}
+
+.footer__socials > img {
+  margin-left: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 640px;
+    padding: 0 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    height: 460px;
+    padding: 0 10rem;
+  }
+}
