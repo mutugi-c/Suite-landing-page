@@ -82,3 +82,54 @@ h4 {
   align-items: center;
   margin: 1.5rem 1rem;
 }
+
+/* Media */
+
+.media__logo {
+  display: flex;
+  justify-content: end;
+}
+
+.media__logo-image {
+  width: 150px;
+}
+
+.media__title {
+  font-size: 2.375rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 2.75rem;
+  margin-top: 0;
+}
+
+.media__body {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .media__logo-image {
+    width: 230px;
+  }
+
+  .media__title {
+    font-size: 3.5rem;
+    letter-spacing: 0.8px;
+    line-height: 4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .media__logo-image {
+    width: 280px;
+  }
+
+  .media__title {
+    font-size: 4.5rem;
+    letter-spacing: 1px;
+    line-height: 4.875rem;
+  }
+
+  .media__body {
+    font-size: 1.125rem;
+  }
+}
