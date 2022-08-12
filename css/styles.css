@@ -183,11 +183,15 @@ h4 {
 }
 
 /* Stats section */
-.stats {
+.stats--container {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-transform: uppercase;
+}
+
+.stat {
+  text-align: center;
 }
 
 .stat__value {
@@ -197,4 +201,12 @@ h4 {
 .stat__category {
   font-size: 1rem;
   letter-spacing: 2.5px;
+}
+
+@media screen and (min-width: 768px) {
+  .stats--container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
