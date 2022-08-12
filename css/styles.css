@@ -74,3 +74,11 @@ h4 {
   background: var(--color-primary);
   color: var(--color-creamWhite);
 }
+
+/* Logo bar */
+.logo--bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 1rem;
+}
