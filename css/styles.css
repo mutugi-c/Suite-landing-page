@@ -152,6 +152,10 @@ h4 {
   grid-template-columns: 1fr 1fr;
 }
 
+.grid--cols3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 /* Hero section */
 
 .hero {
@@ -208,5 +212,106 @@ h4 {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+  }
+}
+
+/* Quote section */
+.quote {
+  background: var(--color-primary);
+  border-radius: 15px;
+  height: 748px;
+  width: 375px;
+  text-align: center;
+}
+
+.quote__image {
+  position: relative;
+  height: 230px;
+}
+
+.quote__image-mobile {
+  position: absolute;
+  top: -180px;
+  right: 75px;
+}
+
+.quote__image-desktop {
+  display: none;
+}
+
+.quote__icon {
+  margin-top: 3rem;
+}
+
+.quote__body {
+  padding: 0 1.5rem 4rem 1.5rem;
+}
+
+.quote__title {
+  color: var(--color-creamWhite);
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.quote__text {
+  color: var(--color-cream);
+  font-size: 1.125rem;
+  line-height: 35px;
+}
+
+.quote__author {
+  color: var(--color-cream);
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.quote__author-company {
+  color: var(--color-cream);
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 2.5px;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .quote {
+    height: 748px;
+    width: 689px;
+  }
+
+  .quote__image-mobile {
+    top: -180px;
+    right: 200px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .quote {
+    display: flex;
+    width: 1110px;
+    height: 545px;
+  }
+
+  .quote__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    padding: 5.5rem 5.5rem 5.5rem 0;
+  }
+
+  .quote__image-mobile {
+    display: none;
+  }
+
+  .quote__image-desktop {
+    display: block;
+    position: relative;
+    top: -45px;
+    right: -25px;
+  }
+
+  .quote__icon {
+    width: 100px;
   }
 }
